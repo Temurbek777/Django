@@ -9,5 +9,6 @@ urlpatterns = [
     path('register', views.Register, name='register'),
     path('login', views.Login, name='login'),
     path('logout', views.Logout, name='logout'),
-    path('post/<int:pk>', views.Post, name="post")
+    path('post/<int:pk>', views.Post, name='post'),
+    path('test/<str:high>', views.Func2, name='func2')
 ]

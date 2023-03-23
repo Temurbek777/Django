@@ -87,5 +87,9 @@ def Post(request, pk):
     return render(request, 'post.html', {'pk': pk})
 
 
+def Func2(request, high):
+    return HttpResponse(f"<h1>Hello World</h1> <h1>{high}</h1>")
+
+
 def PageNotFound(request, exception):
     return HttpResponseNotFound("PageNotFound")
